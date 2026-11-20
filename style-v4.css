@@ -1,0 +1,243 @@
+/* =====================================================================
+   Balanced Ketamine — style-v4.css
+   Additive layer on top of style-v3.css (the existing design system).
+   - Uses ONLY the v3 tokens (colors, font, radius, shadow).
+   - Does NOT restyle the header or footer.
+   - Adds: real <img> media slots, SEO/AEO components (breadcrumbs, TL;DR,
+     answer boxes, table, E-E-A-T box), form validation states, sticky
+     mobile CTA, readability + touch-target fixes and the full breakpoint set
+     (1920 / 1440 / 1366 / 1280 / 1024 / 768 / 425 / 375 / 320).
+   ===================================================================== */
+
+/* ---------- Utilities ---------- */
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+img { max-width: 100%; height: auto; display: block; }
+:focus-visible { outline: 3px solid var(--cyan); outline-offset: 2px; }
+.hp { position: absolute; left: -9999px; }
+
+/* Touch-friendly targets (min 44px) for body CTAs */
+.button { min-height: 44px; padding: 11px 20px; font-size: 12px; }
+
+/* ---------- Hero: real image instead of CSS art ---------- */
+.hero-v4 { min-height: 560px; }
+.hero-photo { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; }
+.hero-v4 .hero-copy { width: min(560px, 52%); padding: 28px 28px 30px; }
+.hero-v4 h1 { font-size: clamp(28px, 2.6vw, 44px); }
+.hero-v4 .hero-copy > p:not(.eyebrow) { font-size: 15px; }
+.hero-v4 .button-row { margin-top: 4px; }
+
+/* ---------- Breadcrumbs (visible; schema in <head>) ---------- */
+.breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; padding: 0; list-style: none; font-size: 12px; }
+.breadcrumbs li + li::before { content: "›"; margin-right: 6px; color: var(--muted); }
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs a[aria-current="page"] { color: var(--purple); font-weight: 700; }
+
+/* ---------- TL;DR summary strip ---------- */
+.tldr { padding: 22px 0; background: var(--white); border-bottom: 1px solid #e4e4e4; }
+.tldr-inner { display: grid; grid-template-columns: auto 1fr; gap: 6px 22px; align-items: start; }
+.tldr-label { grid-row: span 2; margin: 0; padding: 6px 14px; border-radius: 99px; color: var(--white); background: var(--purple); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }
+.tldr p { margin: 0; font-size: 15px; line-height: 1.6; }
+.updated { color: var(--muted); font-size: 13px !important; }
+.updated a { color: var(--purple); }
+
+/* ---------- Pricing card heading ---------- */
+.price-title { margin: 0 0 8px; color: var(--ink); font-size: 16px; line-height: 1.3; }
+.price-card p { font-size: 14px; }
+.financing-card { font-size: 13px; }
+
+/* ---------- Condition strip (h3 replaces v3 h2, same look) ---------- */
+.intro-grid h3 { margin: 0 0 4px; color: var(--purple); font-size: 16px; font-weight: 500; }
+.intro-grid p { font-size: 14px; }
+.intro-grid a { color: var(--purple); font-weight: 700; }
+
+/* ---------- Editorial rows: images, answers, fact lists ---------- */
+.content-img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.welcome-heading p:not(.eyebrow), .editorial-row p, .section-lede { font-size: 15px; }
+.answer { padding: 12px 16px; border-left: 4px solid var(--cyan); background: var(--pale); }
+.subheading { font-size: 16px; }
+.fact-list { margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.6; }
+.fact-list li { margin-bottom: 6px; }
+.fact-list strong { color: var(--purple); }
+
+/* ---------- Treatment cards ---------- */
+.treatment-card h3 { font-size: 15px; }
+.treatment-card p { font-size: 14px; }
+
+/* v3's .editorial-row margin cancels .container centering when both classes are on one element */
+.container.editorial-row { margin-inline: auto; }
+
+/* ---------- Video facades (click to load YouTube) ---------- */
+.video-facade { position: relative; width: 100%; overflow: hidden; padding: 0; border: 0; cursor: pointer; font: inherit; aspect-ratio: 16 / 9; min-height: 0; }
+.video-facade img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.video-facade .video-play, .video-facade .video-label { position: relative; z-index: 1; }
+.video-facade .video-label { padding: 2px 10px; background: rgba(41, 37, 45, .55); }
+.video-facade:hover .video-play { transform: scale(1.08); }
+.video-play { transition: transform .18s ease; }
+.video-facade iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* ---------- Comparison table ---------- */
+.table-title { margin: 8px 0 12px; color: var(--cyan); font-size: 20px; font-weight: 500; }
+.table-wrap { overflow-x: auto; box-shadow: var(--shadow); border-radius: var(--radius-sm); }
+.data-table { width: 100%; min-width: 560px; border-collapse: collapse; background: var(--white); font-size: 14px; }
+.data-table th, .data-table td { padding: 11px 14px; border-bottom: 1px solid #e4e4e4; text-align: left; vertical-align: top; }
+.data-table thead th { color: var(--white); background: var(--purple); }
+.data-table tbody th { color: var(--purple); }
+.data-table tbody tr:nth-child(even) { background: var(--pale); }
+
+/* ---------- Team ---------- */
+.doctor-photo { grid-column: 1; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: top; border-radius: 12px; box-shadow: var(--shadow); }
+.doctor-caption { margin: 0; font-size: 14px; }
+.team-video { aspect-ratio: auto; min-height: 220px; }
+
+/* ---------- Appointment form ---------- */
+.form-intro { font-size: 14px; }
+#appointment-form label { font-size: 13px; }
+#appointment-form input, #appointment-form textarea, #appointment-form select { width: 100%; min-height: 44px; padding: 10px; border: 1px solid #ddd; border-radius: 3px; color: var(--ink); background: var(--white); font: inherit; font-size: 15px; }
+#appointment-form select:focus { outline: 3px solid #75d7fa; outline-offset: 1px; }
+#appointment-form [aria-invalid="true"] { border: 2px solid #ffdf71; }
+.field-error { min-height: 0; margin: 0; color: #ffdf71; font-size: 12px; font-weight: 700; }
+.field-error:empty { display: none; }
+.check-row { display: flex !important; gap: 10px; align-items: flex-start; font-weight: 400 !important; cursor: pointer; }
+#appointment-form .check-row input { width: 22px; min-height: 22px; height: 22px; flex: 0 0 22px; margin: 1px 0 0; }
+.form-status { font-size: 13px; }
+.form-success { margin-bottom: 14px; padding: 12px 14px; border-radius: var(--radius-sm); color: var(--ink); background: var(--white); border-left: 5px solid var(--cyan); font-size: 14px; }
+.clinic-photo { width: 100%; height: 220px; object-fit: cover; }
+.clinic-details h2 { font-size: 20px; }
+.clinic-details p { font-size: 14px; }
+
+/* ---------- Resources (h3 replaces v3 h2, same look) ---------- */
+.resource-item img { width: 100%; height: 220px; object-fit: cover; }
+.resource-item h3 { margin: 12px 0; color: var(--purple); font-size: 19px; line-height: 1.25; }
+.referral-strip p { font-size: 14px; }
+
+/* ---------- Banner with image ---------- */
+.banner-v4 { position: relative; isolation: isolate; overflow: hidden; background: var(--ink); }
+.banner-photo { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+.banner-v4::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(33,22,17,.55), rgba(33,22,17,.3)); }
+
+/* ---------- Testimonials ---------- */
+.slide p { font-size: 15px; }
+.slide-symbol { color: #f5b301; font-size: 22px; letter-spacing: 3px; }
+.slide-meta { margin-top: 10px !important; color: var(--muted); font-size: 13px !important; }
+/* 44px hit area around the small visual dot */
+.slider-dot { position: relative; width: 44px; height: 44px; border: 0; background: transparent; }
+.slider-dot::before { content: ""; position: absolute; top: 50%; left: 50%; width: 12px; height: 12px; border: 1px solid var(--purple); border-radius: 50%; transform: translate(-50%, -50%); }
+.slider-dot.is-active { background: transparent; }
+.slider-dot.is-active::before { background: var(--purple); }
+.slider-dots { gap: 0; }
+.slider-arrow { width: 44px; height: 44px; }
+.stories-link a, .faq-more a { color: var(--purple); font-weight: 700; }
+.stories-link, .faq-more { margin: 18px 0 0; }
+
+/* ---------- Steps as an ordered list (same look as v3 article cards) ---------- */
+ol.steps-grid { padding: 0; list-style: none; }
+.steps-grid li { min-height: 190px; padding: 14px 12px; border-radius: 8px 8px 34px 34px; background: var(--white); box-shadow: var(--shadow); text-align: center; }
+.steps-grid li > span { display: grid; width: 42px; height: 42px; margin: 0 auto 9px; place-items: center; border-radius: 50%; color: var(--white); background: var(--cyan); font-size: 20px; font-weight: 700; }
+.steps-grid li:nth-child(even) > span { background: var(--purple); }
+.steps-grid h3 { font-size: 15px; }
+.steps-grid p { font-size: 13px; }
+
+/* ---------- FAQ: question headings inside <summary> ---------- */
+.faq-item summary h3 { display: inline; margin: 0; font-size: inherit; font-weight: 600; }
+.faq-item summary { min-height: 44px; font-size: 16px; }
+.faq-item p { font-size: 15px; }
+
+/* ---------- E-E-A-T / sources ---------- */
+.eeat { background: var(--white); }
+.eeat-inner { display: grid; grid-template-columns: 1.3fr 1fr; gap: 30px; }
+.eeat-box { padding: 22px 24px; border-left: 5px solid var(--purple); background: var(--pale); }
+.eeat-box h2 { margin: 0 0 8px; color: var(--purple); font-size: 20px; }
+.eeat-box p { font-size: 14px; }
+.sources h3 { margin: 0 0 8px; color: var(--cyan); font-size: 17px; }
+.sources ol { margin: 0; padding-left: 18px; color: var(--muted); font-size: 13px; line-height: 1.55; }
+
+/* ---------- Sticky mobile contact bar (hidden on desktop) ---------- */
+.sticky-cta { display: none; }
+
+/* =====================================================================
+   BREAKPOINTS — design starts at 1920 and scales down.
+   ===================================================================== */
+
+/* 1920 (≥1680): wide layout */
+@media (min-width: 1680px) {
+  :root { --max-width: 1480px; }
+  body { font-size: 16px; }
+  .hero-v4 { min-height: 680px; }
+  .section { padding: 72px 0; }
+  .treatment-grid { gap: 28px; }
+  .treatment-card { padding: 26px 24px; }
+}
+
+/* 1440 (1441–1679) */
+@media (min-width: 1441px) and (max-width: 1679px) {
+  :root { --max-width: 1320px; }
+  .hero-v4 { min-height: 620px; }
+  .section { padding: 60px 0; }
+}
+
+/* 1366 / 1280 (1281–1440) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  :root { --max-width: 1200px; }
+  .section { padding: 54px 0; }
+}
+
+/* 1280 and below keep v3's 1120px container */
+
+/* 1024 */
+@media (max-width: 1024px) {
+  .hero-v4 { min-height: 480px; }
+  .hero-v4 .hero-copy { width: min(520px, 62%); }
+  .eeat-inner { grid-template-columns: 1fr; }
+  .steps-grid li { min-height: 165px; }
+}
+
+/* 768: tablets — show sticky contact bar */
+@media (max-width: 768px) {
+  body { padding-bottom: 60px; }
+  .hero-v4 .hero-copy { width: min(480px, 75%); }
+  .tldr-inner { grid-template-columns: 1fr; }
+  .tldr-label { grid-row: auto; justify-self: start; }
+  .sticky-cta { position: fixed; z-index: 30; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: repeat(3, 1fr); background: var(--purple); box-shadow: 0 -3px 14px rgba(29, 12, 45, .2); }
+  .sticky-cta a { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 56px; color: var(--white); text-decoration: none; text-transform: uppercase; font-size: 13px; font-weight: 700; }
+  .sticky-cta a + a { border-left: 1px solid rgba(255,255,255,.2); }
+  .sticky-cta a:last-child { background: var(--cyan); }
+  .pricing-layout { grid-template-columns: 1fr; }
+}
+
+/* 480 and below inherits v3 mobile rules; these complete them */
+@media (max-width: 480px) {
+  .hero-v4 { min-height: 0; padding: 140px 0 18px; }
+  .hero-v4 .hero-inner { width: calc(100% - 30px); }
+  .hero-v4 .hero-copy { width: 100%; padding: 18px; }
+  .hero-v4 h1 { font-size: 27px; }
+  .hero-v4 .button-row .button { flex: 1 1 100%; }
+  .eeat-inner, .resource-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
+  .doctor-photo, .team-video { grid-column: 1; grid-row: auto; }
+  .team-video { min-height: 0; aspect-ratio: 16 / 9; }
+  .history-row .content-img { grid-row: 1; }
+  .steps-grid li { min-height: 0; }
+  .clinic-photo, .resource-item img { height: 180px; }
+}
+
+/* 425 */
+@media (max-width: 425px) {
+  .tldr p, .fact-list, .editorial-row p, .welcome-heading p:not(.eyebrow) { font-size: 15px; }
+  .section-title { font-size: 24px; }
+}
+
+/* 375 */
+@media (max-width: 375px) {
+  .hero-v4 h1 { font-size: 25px; }
+  .section-title { font-size: 22px; }
+  .steps-grid { grid-template-columns: 1fr; }
+  .slide { padding: 18px 14px; }
+}
+
+/* 320 */
+@media (max-width: 320px) {
+  .container, .hero-v4 .hero-inner { width: calc(100% - 24px); }
+  .hero-v4 h1 { font-size: 23px; }
+  .sticky-cta a { font-size: 12px; gap: 4px; }
+  .slider-controls { gap: 6px; }
+}

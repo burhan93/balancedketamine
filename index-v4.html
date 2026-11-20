@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===================================================================
+       PRIMARY SEO
+       TODO(DOMAIN): replace https://www.balancedketamine.com with the live domain
+       everywhere in this file (canonical, OG, schema).
+       NOTE: Per project brief the home page is excluded from sitemap.xml and
+       disallowed in robots.txt — see README-v4.md for the SEO trade-off.
+       =================================================================== -->
+  <title>Ketamine Infusion Therapy Kansas City | Balanced Ketamine</title>
+  <meta name="description" content="Balanced Ketamine provides physician-led ketamine infusion therapy in Kansas City for depression, anxiety, PTSD and chronic pain. Request a consultation today.">
+  <link rel="canonical" href="https://www.balancedketamine.com/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#57008c">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Balanced Ketamine">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://www.balancedketamine.com/">
+  <meta property="og:title" content="Ketamine Infusion Therapy Kansas City | Balanced Ketamine">
+  <meta property="og:description" content="Physician-led ketamine infusion therapy in Kansas City for treatment-resistant depression, anxiety, PTSD and chronic pain.">
+  <meta property="og:image" content="https://www.balancedketamine.com/images/hero-ketamine-infusion-kansas-city.webp">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="900">
+  <meta property="og:image:alt" content="Calm ketamine infusion suite at Balanced Ketamine in Kansas City">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ketamine Infusion Therapy Kansas City | Balanced Ketamine">
+  <meta name="twitter:description" content="Physician-led ketamine infusion therapy in Kansas City for depression, anxiety, PTSD and chronic pain.">
+  <meta name="twitter:image" content="https://www.balancedketamine.com/images/hero-ketamine-infusion-kansas-city.webp">
+
+  <!-- Performance: preload the LCP hero image -->
+  <link rel="preload" as="image" href="images/hero-ketamine-infusion-kansas-city.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Existing design system (unchanged) + v4 additive components -->
+  <link rel="stylesheet" href="style-v3.css">
+  <link rel="stylesheet" href="style-v4.css">
+  <script src="script-v4.js" defer></script>
+
+  <!-- ===================================================================
+       CONVERSION TRACKING (ready, disabled until IDs are added)
+       1) GA4: replace G-XXXXXXXXXX and uncomment.
+       2) Meta Pixel: replace 000000000000000 and uncomment.
+       script-v4.js pushes events to dataLayer and calls gtag()/fbq() when present:
+       generate_lead / Lead, click_to_call / Contact, whatsapp_click / Contact,
+       book_appointment_click.
+       =================================================================== -->
+  <script>window.dataLayer = window.dataLayer || [];</script>
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '000000000000000');
+    fbq('track', 'PageView');
+  </script>
+  -->
+
+  <!-- ===================================================================
+       STRUCTURED DATA (JSON-LD): MedicalClinic (LocalBusiness) + Organization
+       + WebSite + WebPage + BreadcrumbList + Physician.
+       TODO(NAP): replace every [bracketed] value and the 555 phone number.
+       No AggregateRating is included — add one only from real, verifiable reviews.
+       =================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.balancedketamine.com/#organization",
+        "name": "Balanced Ketamine",
+        "url": "https://www.balancedketamine.com/",
+        "logo": "https://www.balancedketamine.com/images/logo.webp",
+        "telephone": "+1-816-555-0123",
+        "sameAs": [
+          "https://www.facebook.com/[balancedketamine]",
+          "https://www.instagram.com/[balancedketamine]",
+          "https://www.youtube.com/@[balancedketamine]",
+          "https://www.linkedin.com/company/[balancedketamine]",
+          "https://www.google.com/maps?cid=[GOOGLE_BUSINESS_CID]"
+        ]
+      },
+      {
+        "@type": ["MedicalClinic", "LocalBusiness"],
+        "@id": "https://www.balancedketamine.com/#clinic",
+        "name": "Balanced Ketamine",
+        "description": "Physician-led ketamine infusion clinic serving the Kansas City metro for treatment-resistant depression, anxiety, PTSD and chronic pain.",
+        "url": "https://www.balancedketamine.com/",
+        "image": "https://www.balancedketamine.com/images/clinic-exterior-kansas-city.webp",
+        "telephone": "+1-816-555-0123",
+        "email": "[info@balancedketamine.com]",
+        "priceRange": "$$$",
+        "parentOrganization": { "@id": "https://www.balancedketamine.com/#organization" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "[Street Address, Suite]",
+          "addressLocality": "Kansas City",
+          "addressRegion": "MO",
+          "postalCode": "[ZIP]",
+          "addressCountry": "US"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": "[LAT]", "longitude": "[LNG]" },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "[08:00]",
+          "closes": "[17:00]"
+        }],
+        "areaServed": ["Kansas City, MO", "Kansas City, KS", "Overland Park, KS", "Olathe, KS", "Lee's Summit, MO", "Independence, MO", "Lenexa, KS", "Shawnee, KS"],
+        "medicalSpecialty": ["Psychiatric", "Anesthesia", "PainMedicine"],
+        "availableService": [
+          { "@type": "MedicalTherapy", "name": "Ketamine infusion therapy for depression" },
+          { "@type": "MedicalTherapy", "name": "Ketamine infusion therapy for anxiety" },
+          { "@type": "MedicalTherapy", "name": "Ketamine infusion therapy for PTSD" },
+          { "@type": "MedicalTherapy", "name": "Ketamine infusion therapy for chronic pain" }
+        ],
+        "employee": { "@id": "https://www.balancedketamine.com/#medical-director" },
+        "sameAs": [
+          "https://www.facebook.com/[balancedketamine]",
+          "https://www.instagram.com/[balancedketamine]",
+          "https://www.youtube.com/@[balancedketamine]"
+        ]
+      },
+      {
+        "@type": "Physician",
+        "@id": "https://www.balancedketamine.com/#medical-director",
+        "name": "Dr. [Full Name], MD",
+        "jobTitle": "Medical Director",
+        "medicalSpecialty": "[Anesthesiology / Psychiatry]",
+        "worksFor": { "@id": "https://www.balancedketamine.com/#clinic" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.balancedketamine.com/#website",
+        "url": "https://www.balancedketamine.com/",
+        "name": "Balanced Ketamine",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://www.balancedketamine.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.balancedketamine.com/#webpage",
+        "url": "https://www.balancedketamine.com/",
+        "name": "Ketamine Infusion Therapy Kansas City | Balanced Ketamine",
+        "isPartOf": { "@id": "https://www.balancedketamine.com/#website" },
+        "about": { "@id": "https://www.balancedketamine.com/#clinic" },
+        "primaryImageOfPage": "https://www.balancedketamine.com/images/hero-ketamine-infusion-kansas-city.webp",
+        "dateModified": "2026-11-20",
+        "reviewedBy": { "@id": "https://www.balancedketamine.com/#medical-director" },
+        "breadcrumb": { "@id": "https://www.balancedketamine.com/#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.balancedketamine.com/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.balancedketamine.com/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================================================================
+       EXISTING HEADER (from index-v3.html — design and markup unchanged).
+       Only the reference clinic's address / hours / phone were swapped for
+       Balanced Ketamine placeholders. TODO(NAP)
+       =================================================================== -->
+  <header class="site-header">
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <a class="brand" href="#home" aria-label="Balanced Ketamine home">
+          <span class="brand-word">balanced</span>
+          <span class="brand-name">KETAMINE</span>
+          <span class="brand-tagline">Comfort and Healing for Those in Need</span>
+        </a>
+        <div class="utility-item"><span class="utility-icon" aria-hidden="true">⌖</span><span>[Street Address, Suite]<br>Kansas City, MO [ZIP]</span></div>
+        <div class="utility-item"><span class="utility-icon" aria-hidden="true">◷</span><span>Monday–Friday<br>[Opening Hours]</span></div>
+        <a class="utility-item utility-phone" href="tel:+18165550123" data-track="click_to_call"><span class="utility-icon" aria-hidden="true">▣</span><span>Call to request an appointment<br>(816) 555-0123</span></a>
+        <div class="social-links" aria-label="Social media"><a href="#footer" aria-label="Facebook">f</a><a href="#footer" aria-label="YouTube">▶</a></div>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a class="current" href="#home" aria-current="page">Home</a><a href="#about">About Us</a><a href="#treatments">Treatments</a><a href="#expect">What to Expect</a><a href="#footer">Contact Us</a><a href="#media">Media</a><a href="#stories">Testimonials</a><a href="#resources">Patient Packet</a>
+        </div>
+        <a class="nav-appointment" href="#appointment" data-track="book_appointment_click">▣ &nbsp; Request an Appointment</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 1. HERO (H1 + primary CTAs above the fold) ============ -->
+    <section class="hero hero-v4" id="home" aria-labelledby="hero-title">
+      <!-- REPLACE IMAGE: real photo of the Balanced Ketamine infusion suite (1920x900 WebP) -->
+      <img class="hero-photo" src="images/hero-ketamine-infusion-kansas-city.webp" width="1920" height="900"
+           alt="Private, softly lit ketamine infusion suite with a reclining chair at Balanced Ketamine in Kansas City"
+           fetchpriority="high" decoding="async">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol><li><a href="#home" aria-current="page">Home</a></li></ol>
+          </nav>
+          <p class="eyebrow">Balanced Ketamine · Kansas City Infusion Clinic</p>
+          <h1 id="hero-title">Ketamine Infusion Therapy in Kansas City for Lasting Relief</h1>
+          <p>When standard treatments have stalled, physician-supervised ketamine infusions offer a different path. Our private suites serve patients from Kansas City, Overland Park, Olathe, Lee's Summit, Independence and the wider metro.</p>
+          <div class="button-row">
+            <a class="button button-purple" href="#appointment" data-track="book_appointment_click">Request an Appointment</a>
+            <a class="button button-cyan" href="tel:+18165550123" data-track="click_to_call">Call (816) 555-0123</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. TL;DR SUMMARY (AIO) ============ -->
+    <section class="tldr" aria-labelledby="tldr-title">
+      <div class="container tldr-inner">
+        <h2 id="tldr-title" class="tldr-label">In short</h2>
+        <p><strong>Balanced Ketamine</strong> is a physician-led ketamine infusion clinic in Kansas City. We treat adults with treatment-resistant depression, anxiety, PTSD and certain chronic pain conditions using low-dose IV ketamine, given over about 40–60 minutes with continuous monitoring. Most mood protocols start with six infusions over two to three weeks.</p>
+        <p class="updated">Last updated: <time datetime="2026-11-20">November 20, 2026</time> · Medically reviewed by <a href="#medical-review">Dr. [Full Name], MD</a></p>
+      </div>
+    </section>
+
+    <!-- ============ 3. PRICING + FINANCING BAND ============ -->
+    <section class="pricing-band" aria-labelledby="pricing-title">
+      <div class="container pricing-layout">
+        <div class="price-card">
+          <h2 id="pricing-title" class="price-title">How much does ketamine infusion cost in Kansas City?</h2>
+          <!-- TODO(PRICING): replace bracketed prices with Balanced Ketamine's real fees -->
+          <p>Single infusions at Balanced Ketamine are <strong>$[XXX]–$[XXX]</strong> per session. A full six-infusion starter series is <strong>$[X,XXX]–$[X,XXX]</strong>. Most insurance plans don't cover IV ketamine for mood conditions, but we provide itemized receipts for reimbursement requests.</p>
+        </div>
+        <a class="financing-card" href="#appointment" aria-label="Ask about patient financing options">
+          <span class="financing-logo">PATIENT<br><b>FINANCING</b></span>
+          <span><strong>Flexible Monthly Payment Options</strong><br>Ask about medical financing partners<br><b class="financing-apply">Ask About Financing</b></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 4. CONDITION INTRO STRIP ============ -->
+    <section class="condition-intro" aria-labelledby="conditions-strip-title">
+      <h2 id="conditions-strip-title" class="visually-hidden">Conditions treated with ketamine at Balanced Ketamine</h2>
+      <div class="container intro-grid">
+        <article><span class="line-icon" aria-hidden="true">◉</span><h3>Ketamine for Depression</h3><p>For adults whose depression hasn't improved after two or more antidepressants. <a href="ketamine-for-depression/">Explore depression treatment</a></p></article>
+        <article><span class="line-icon" aria-hidden="true">◌</span><h3>Ketamine for Anxiety</h3><p>Support for persistent, hard-to-treat anxiety alongside your ongoing care. <a href="ketamine-for-anxiety/">Explore anxiety treatment</a></p></article>
+        <article><span class="line-icon" aria-hidden="true">◇</span><h3>Ketamine for Chronic Pain</h3><p>Longer pain-protocol infusions for complex, nerve-related pain. <a href="ketamine-for-chronic-pain/">Explore chronic pain treatment</a></p></article>
+      </div>
+    </section>
+
+    <!-- ============ 5. WELCOME / ABOUT + WHAT IS + HISTORY ============ -->
+    <section class="welcome section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="welcome-heading">
+          <div>
+            <p class="eyebrow">Welcome to Balanced Ketamine</p>
+            <h2 class="section-title" id="about-title">Ketamine Infusion Clinic Serving the Kansas City Metro</h2>
+            <p>Balanced Ketamine was founded on one belief: people who have tried everything deserve another evidence-based option, delivered with dignity. Every infusion is ordered by our medical director, dosed to your body weight and history, and monitored from start to finish by trained clinical staff in a quiet, private room.</p>
+          </div>
+          <!-- REPLACE: real accreditation / award badge (e.g. ASKP3 membership). Keep the same visual slot. -->
+          <div class="award-mark" role="img" aria-label="Placeholder for Balanced Ketamine accreditation badge"><span>★ ★ ★</span><strong>YOUR<br>AWARD<br>BADGE</strong><small>[YEAR]</small></div>
+        </div>
+
+        <div class="editorial-row">
+          <!-- REPLACE IMAGE: infusion room photo (960x640 WebP) -->
+          <img class="content-img" src="images/ketamine-infusion-therapy-room.webp" width="960" height="640" loading="lazy" decoding="async"
+               alt="Nurse preparing an IV ketamine infusion beside a reclining treatment chair">
+          <div>
+            <h3 class="cyan-heading">What is ketamine infusion therapy?</h3>
+            <p class="answer"><strong>Ketamine infusion therapy</strong> is the slow intravenous delivery of a low, sub-anesthetic dose of ketamine (commonly about 0.5 mg/kg over 40 minutes for mood conditions) under medical supervision. Unlike daily antidepressants that can take 4–8 weeks to work, many responders notice improvement within hours to days.</p>
+            <p>Ketamine acts on the brain's glutamate system rather than serotonin, which is why it can help people who haven't responded to conventional medication. Its use for depression, anxiety and PTSD is off-label; our physician will explain what that means for you during your consultation.</p>
+            <div class="button-row">
+              <a class="button button-purple" href="ketamine-infusion-therapy/">Read the Full Guide</a>
+              <a class="button button-cyan" href="#resources">Patient Resources</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="editorial-row history-row">
+          <div>
+            <h3 class="cyan-heading">Is ketamine a new treatment?</h3>
+            <p class="subheading">No. It has a 60-year medical history.</p>
+            <ul class="fact-list">
+              <li><strong>1962:</strong> Ketamine is first synthesized as a safer, shorter-acting anesthetic.</li>
+              <li><strong>1970:</strong> The U.S. FDA approves ketamine for anesthesia. It remains on the WHO Model List of Essential Medicines.</li>
+              <li><strong>2000:</strong> A Yale-led controlled trial reports rapid antidepressant effects after a single low-dose infusion.</li>
+              <li><strong>2006:</strong> An NIMH study confirms improvement within hours in treatment-resistant depression.</li>
+              <li><strong>2019:</strong> The FDA approves esketamine nasal spray, a ketamine-derived medicine, for treatment-resistant depression.</li>
+            </ul>
+          </div>
+          <!-- REPLACE IMAGE: care team photo (960x640 WebP) -->
+          <img class="content-img" src="images/ketamine-history-care-team.webp" width="960" height="640" loading="lazy" decoding="async"
+               alt="Balanced Ketamine care team reviewing a patient's treatment plan in Kansas City">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. TREATMENTS GRID (links to service pages) ============ -->
+    <section class="treatments section" id="treatments" aria-labelledby="treatments-title">
+      <div class="container">
+        <p class="eyebrow centered">Benefits of Ketamine Infusion Therapy</p>
+        <h2 class="section-title centered" id="treatments-title">What Conditions Does Ketamine Treat?</h2>
+        <p class="section-lede">Ketamine is not a first-line treatment. It is most often considered when symptoms persist despite medication, therapy, or both. These are the conditions our Kansas City clinic evaluates for infusion therapy.</p>
+        <div class="treatment-grid">
+          <a class="treatment-card" href="ketamine-for-chronic-pain/"><span class="treatment-icon" aria-hidden="true">♧</span><h3>Ketamine for Chronic Pain</h3><p>Extended infusions that may calm an overactive pain system in conditions like fibromyalgia.</p></a>
+          <a class="treatment-card" href="ketamine-for-depression/"><span class="treatment-icon" aria-hidden="true">◉</span><h3>Ketamine for Depression and Anxiety</h3><p>Fast-acting support for treatment-resistant depression, suicidal thoughts and anxious distress.</p></a>
+          <a class="treatment-card" href="ketamine-for-ptsd/"><span class="treatment-icon" aria-hidden="true">❖</span><h3>Ketamine for PTSD</h3><p>May reduce intrusive memories and hyperarousal, especially when paired with trauma-focused therapy.</p></a>
+          <a class="treatment-card" href="ketamine-for-bipolar-depression/"><span class="treatment-icon" aria-hidden="true">◉</span><h3>Ketamine for Bipolar Depression</h3><p>Considered for the depressive phase, in coordination with your psychiatrist's mood-stabilizer plan.</p></a>
+          <a class="treatment-card" href="ketamine-for-migraine/"><span class="treatment-icon" aria-hidden="true">✺</span><h3>Ketamine for Migraine</h3><p>An option for frequent, refractory migraine that hasn't responded to standard preventives.</p></a>
+          <a class="treatment-card" href="ketamine-for-crps-nerve-pain/"><span class="treatment-icon" aria-hidden="true">◯</span><h3>Ketamine for CRPS and Nerve Pain</h3><p>Pain-protocol infusions for complex regional pain syndrome and neuropathic pain.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. HOW DOES IT WORK + VIDEO + COMPARISON TABLE ============ -->
+    <section class="how-it-works section" id="media" aria-labelledby="how-title">
+      <div class="container editorial-row">
+        <div>
+          <h2 class="section-title" id="how-title">How does ketamine work in the brain?</h2>
+          <p class="answer">Ketamine blocks NMDA receptors, which triggers a short burst of glutamate, the brain's main signaling chemical. That burst is thought to encourage new connections between nerve cells (synaptogenesis) in mood-regulating regions, helping the brain move out of rigid, negative thought patterns.</p>
+          <p>Traditional antidepressants gradually adjust serotonin or norepinephrine. Ketamine works on a different pathway, which is why roughly half of people with treatment-resistant depression respond in clinical studies.</p>
+        </div>
+        <!-- REPLACE VIDEO: set data-video-id to the clinic's YouTube video ID. Click-to-load keeps LCP fast. -->
+        <button class="video-card video-facade" type="button" data-video-id="REPLACE_VIDEO_ID" aria-label="Play video: How ketamine infusion therapy works">
+          <img src="images/how-ketamine-works-video.webp" width="960" height="540" loading="lazy" decoding="async" alt="">
+          <span class="video-play" aria-hidden="true">▶</span><span class="video-label">How Ketamine Infusion Works (3 min)</span>
+        </button>
+      </div>
+
+      <div class="container">
+        <h3 class="table-title">Ketamine infusion vs. other depression treatments</h3>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Treatment comparison table, scrolls horizontally on small screens">
+          <table class="data-table">
+            <caption class="visually-hidden">Comparison of IV ketamine, esketamine nasal spray and oral antidepressants</caption>
+            <thead><tr><th scope="col">Factor</th><th scope="col">IV ketamine infusion</th><th scope="col">Esketamine nasal spray</th><th scope="col">Oral antidepressants</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">How it's given</th><td>IV drip in clinic</td><td>Nasal spray in certified clinic</td><td>Daily pill at home</td></tr>
+              <tr><th scope="row">Typical time to effect</th><td>Hours to days</td><td>Hours to days</td><td>4–8 weeks</td></tr>
+              <tr><th scope="row">Main brain target</th><td>Glutamate (NMDA)</td><td>Glutamate (NMDA)</td><td>Serotonin / norepinephrine</td></tr>
+              <tr><th scope="row">FDA status for depression</th><td>Off-label</td><td>FDA-approved (2019)</td><td>FDA-approved</td></tr>
+              <tr><th scope="row">Dose adjustment</th><td>Precise, weight-based</td><td>Fixed doses</td><td>Gradual titration</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ===== Team block ===== -->
+      <div class="container team-block">
+        <p class="eyebrow centered">Our Team</p>
+        <h2 class="section-title centered">Who will oversee my ketamine treatment?</h2>
+        <p class="section-lede">Every patient is evaluated and treated under the supervision of our medical director. Registered nurses with advanced airway and cardiac life-support training stay with you during each infusion.</p>
+        <div class="team-grid">
+          <!-- REPLACE IMAGE: medical director portrait (640x760 WebP) -->
+          <img class="doctor-photo" src="images/medical-director-portrait.webp" width="640" height="760" loading="lazy" decoding="async"
+               alt="Dr. [Full Name], MD, medical director of Balanced Ketamine in Kansas City">
+          <p class="doctor-caption"><strong>Dr. [Full Name], MD</strong><br>Medical Director · Board-certified in [Specialty]</p>
+          <button class="video-card team-video video-facade" type="button" data-video-id="REPLACE_TEAM_VIDEO_ID" aria-label="Play video: Meet the Balanced Ketamine care team">
+            <img src="images/care-team-video.webp" width="960" height="540" loading="lazy" decoding="async" alt="">
+            <span class="video-play" aria-hidden="true">▶</span><span class="video-label">Meet the Care Team</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. APPOINTMENT FORM + CLINIC INFO ============ -->
+    <section class="appointment-section" id="appointment" aria-labelledby="appointment-title">
+      <div class="appointment-form-panel">
+        <div class="form-wrap">
+          <h2 id="appointment-title">Request an Appointment</h2>
+          <p class="form-intro">Takes under a minute. A care coordinator will call you within one business day.</p>
+
+          <!-- Success message shown after redirect back to this page (?submitted=true) -->
+          <div class="form-success" id="form-success" role="status" tabindex="-1" hidden>
+            <strong>Thank you, your request was received.</strong> A Balanced Ketamine coordinator will contact you within one business day. For urgent help, call or text 988.
+          </div>
+
+          <!-- TODO(FORM): set data-endpoint to your HIPAA-compliant form handler URL.
+               On success, script-v4.js redirects back to this home page. -->
+          <form id="appointment-form" action="index-v4.html" method="post" data-endpoint="" data-redirect="index-v4.html?submitted=true#appointment" novalidate>
+            <div class="form-row">
+              <div><label for="first-name">First name *</label><input id="first-name" name="firstName" autocomplete="given-name" required aria-describedby="first-name-error"><p class="field-error" id="first-name-error"></p></div>
+              <div><label for="last-name">Last name *</label><input id="last-name" name="lastName" autocomplete="family-name" required aria-describedby="last-name-error"><p class="field-error" id="last-name-error"></p></div>
+            </div>
+            <label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required pattern="[0-9()+\-.\s]{10,20}" aria-describedby="phone-error"><p class="field-error" id="phone-error"></p>
+            <label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error"><p class="field-error" id="email-error"></p>
+            <label for="reason">I'm interested in treatment for</label>
+            <select id="reason" name="reason">
+              <option value="">Select one (optional)</option>
+              <option>Depression</option><option>Anxiety</option><option>PTSD</option><option>Chronic pain</option><option>Other / not sure</option>
+            </select>
+            <!-- Honeypot field to block spam bots (hidden from people and screen readers) -->
+            <div class="hp" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+            <label class="check-row" for="consent"><input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error"> <span>I agree to be contacted about my request. Please don't include detailed medical history here.</span></label><p class="field-error" id="consent-error"></p>
+            <button class="button button-cyan" type="submit">Request an Appointment</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+      <div class="appointment-info">
+        <!-- REPLACE IMAGE: clinic exterior or lobby photo (960x540 WebP) -->
+        <img class="clinic-photo" src="images/clinic-exterior-kansas-city.webp" width="960" height="540" loading="lazy" decoding="async"
+             alt="Entrance to the Balanced Ketamine infusion clinic in Kansas City, Missouri">
+        <div class="clinic-details">
+          <h2>Where is Balanced Ketamine located?</h2>
+          <p><span aria-hidden="true">⌖</span> [Street Address, Suite], Kansas City, MO [ZIP]</p>
+          <p><span aria-hidden="true">◷</span> Monday–Friday, [Opening Hours]</p>
+          <p>Free on-site parking · About [XX] minutes from Overland Park and Lee's Summit</p>
+          <a href="tel:+18165550123" data-track="click_to_call">Call (816) 555-0123</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. PATIENT RESOURCES ============ -->
+    <section class="resources section" id="resources" aria-labelledby="resources-title">
+      <h2 id="resources-title" class="visually-hidden">Patient resources</h2>
+      <div class="container resource-grid">
+        <article class="resource-item">
+          <!-- REPLACE IMAGE (800x500 WebP) -->
+          <img src="images/infusion-day-comfort.webp" width="800" height="500" loading="lazy" decoding="async" alt="Patient relaxing under a blanket with headphones during a ketamine infusion">
+          <h3>What happens on the day of your ketamine infusion?</h3>
+          <a class="button button-cyan" href="what-to-expect/">What to Expect</a>
+        </article>
+        <article class="resource-item">
+          <!-- REPLACE IMAGE (800x500 WebP) -->
+          <img src="images/ketamine-safety-questions.webp" width="800" height="500" loading="lazy" decoding="async" alt="Open landscape representing questions about ketamine safety and side effects">
+          <h3>Is ketamine safe? Side effects and risks explained</h3>
+          <a class="button button-cyan" href="#faq">Frequently Asked Questions</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 10. REFERRAL / SELF-SCREEN SPLIT STRIP ============ -->
+    <section class="referral-strip" aria-label="Referrals and eligibility">
+      <div>
+        <h2>Patient Referral</h2>
+        <p>Psychiatrists, therapists and primary care providers can refer patients directly. We share treatment updates with your team after each phase of care.</p>
+        <a class="button button-cyan" href="patient-referral/">Refer a Patient</a>
+      </div>
+      <div>
+        <h2>Is Ketamine Right for Me?</h2>
+        <p>You may be a candidate if you're 18+, have tried at least two treatments without enough relief, and have no uncontrolled high blood pressure or history of psychosis.</p>
+        <a class="button button-purple" href="#appointment" data-track="book_appointment_click">Check My Eligibility</a>
+      </div>
+    </section>
+
+    <!-- ============ 11. BANNER MESSAGE ============ -->
+    <section class="banner-message banner-v4" aria-label="Clinic message">
+      <!-- REPLACE IMAGE: Kansas City skyline or calming landscape (1920x500 WebP) -->
+      <img class="banner-photo" src="images/kansas-city-skyline-banner.webp" width="1920" height="500" loading="lazy" decoding="async" alt="">
+      <p>Find your footing again with<br><strong>Physician-Guided Ketamine Infusions in Kansas City</strong></p>
+    </section>
+
+    <!-- ============ 12. TESTIMONIALS SLIDER ============ -->
+    <section class="stories section" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <p class="eyebrow centered">Our Reviews</p>
+        <h2 class="section-title centered" id="stories-title">What do patients say about Balanced Ketamine?</h2>
+        <p class="section-lede">Rated <strong>[X.X] out of 5</strong> from <strong>[XX] Google reviews</strong>. Individual results vary and are not guaranteed.</p>
+        <!-- REPLACE: paste VERIFIED reviews only (with the patient's written permission). Do not invent testimonials. -->
+        <div class="slider" aria-roledescription="carousel" aria-label="Patient reviews">
+          <div class="slides" aria-live="polite">
+            <article class="slide is-active" aria-roledescription="slide" aria-label="1 of 3"><span class="slide-symbol" aria-hidden="true">★★★★★</span><h3>[Verified review headline]</h3><p>"[Paste a verified patient review here, 25–60 words.]"</p><p class="slide-meta">[First name, last initial] · [City] · Google review</p></article>
+            <article class="slide" aria-roledescription="slide" aria-label="2 of 3"><span class="slide-symbol" aria-hidden="true">★★★★★</span><h3>[Verified review headline]</h3><p>"[Paste a verified patient review here, 25–60 words.]"</p><p class="slide-meta">[First name, last initial] · [City] · Google review</p></article>
+            <article class="slide" aria-roledescription="slide" aria-label="3 of 3"><span class="slide-symbol" aria-hidden="true">★★★★★</span><h3>[Verified review headline]</h3><p>"[Paste a verified patient review here, 25–60 words.]"</p><p class="slide-meta">[First name, last initial] · [City] · Google review</p></article>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-arrow" type="button" data-direction="previous" aria-label="Previous review">‹</button>
+            <div class="slider-dots" role="group" aria-label="Choose a review">
+              <button class="slider-dot is-active" type="button" aria-label="Show review 1" aria-pressed="true"></button>
+              <button class="slider-dot" type="button" aria-label="Show review 2" aria-pressed="false"></button>
+              <button class="slider-dot" type="button" aria-label="Show review 3" aria-pressed="false"></button>
+            </div>
+            <button class="slider-arrow" type="button" data-direction="next" aria-label="Next review">›</button>
+          </div>
+        </div>
+        <p class="centered stories-link"><a href="testimonials/">Read more patient stories</a></p>
+      </div>
+    </section>
+
+    <!-- ============ 13. WHAT TO EXPECT + STEPS ============ -->
+    <section class="expect-section section" id="expect" aria-labelledby="expect-title">
+      <div class="container">
+        <p class="eyebrow centered">What to Expect From</p>
+        <h2 class="section-title centered" id="expect-title">What happens during a ketamine infusion?</h2>
+        <div class="editorial-row">
+          <div>
+            <p class="answer">A typical visit lasts about <strong>90 minutes</strong>. You'll relax in a reclining chair while a nurse places a small IV and attaches blood pressure, heart rate and oxygen monitors. The infusion itself runs <strong>40–60 minutes</strong>, followed by roughly 30 minutes of recovery before a friend or family member drives you home.</p>
+            <ul class="fact-list">
+              <li><strong>Before:</strong> no food for 4 hours and no clear liquids for 2 hours beforehand (confirm with your nurse).</li>
+              <li><strong>During:</strong> mild, temporary dissociation or a floating feeling is common and fades soon after the drip stops.</li>
+              <li><strong>After:</strong> no driving or important decisions for the rest of the day.</li>
+            </ul>
+          </div>
+          <!-- REPLACE IMAGE (960x640 WebP) -->
+          <img class="content-img" src="images/infusion-preparation.webp" width="960" height="640" loading="lazy" decoding="async"
+               alt="IV pump and vital-sign monitor set up for a ketamine infusion session">
+        </div>
+
+        <h2 class="section-title centered steps-heading">How do I start ketamine treatment in Kansas City?</h2>
+        <ol class="steps-grid" aria-label="Five steps to begin ketamine treatment">
+          <li><span aria-hidden="true">1</span><h3>Contact Us</h3><p>Call, text or submit the form. We reply within one business day.</p></li>
+          <li><span aria-hidden="true">2</span><h3>Review Costs</h3><p>We explain session fees, financing and reimbursement options up front.</p></li>
+          <li><span aria-hidden="true">3</span><h3>Share Records</h3><p>We request a referral or recent notes from your current provider.</p></li>
+          <li><span aria-hidden="true">4</span><h3>Consultation</h3><p>Meet our physician to review your history and confirm eligibility.</p></li>
+          <li><span aria-hidden="true">5</span><h3>First Infusion</h3><p>Begin your series with a personalized dose and full monitoring.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 14. FAQ ACCORDION (People Also Ask coverage) ============ -->
+    <section class="faq-section section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 class="section-title centered" id="faq-title">Frequently Asked Questions About Ketamine Infusions</h2>
+        <div class="faq-list">
+          <details class="faq-item" open><summary><h3>How many ketamine infusions will I need?</h3></summary><p>Most mood-disorder protocols begin with six infusions over two to three weeks. People who respond may then need occasional booster infusions, often every few weeks to few months. Chronic pain protocols differ and may use longer infusions over consecutive days.</p></details>
+          <details class="faq-item"><summary><h3>How quickly does ketamine work for depression?</h3></summary><p>Many people who respond notice a lift in mood or reduced suicidal thoughts within 24 hours of an infusion, and benefits usually build across the series. If there's no meaningful change after three or four infusions, our physician will discuss whether to continue.</p></details>
+          <details class="faq-item"><summary><h3>What are the side effects of ketamine infusions?</h3></summary><p>Common short-term effects include a dreamy or detached feeling, temporary blood pressure rise, nausea, dizziness and blurred vision. These usually fade within an hour or two after the infusion ends. Continuous monitoring lets the nurse slow or stop the drip at any time.</p></details>
+          <details class="faq-item"><summary><h3>Does insurance cover ketamine infusion therapy?</h3></summary><p>Most insurers don't cover IV ketamine for depression or anxiety because the use is off-label. Some plans partly cover the consultation. We provide itemized superbills you can submit for possible out-of-network reimbursement, and we offer financing.</p></details>
+          <details class="faq-item"><summary><h3>Who should not get ketamine treatment?</h3></summary><p>Ketamine may not be suitable if you have uncontrolled high blood pressure, active psychosis or a history of schizophrenia, current substance misuse, certain heart conditions, or are pregnant. Our physician screens for these during your consultation.</p></details>
+          <details class="faq-item"><summary><h3>Do I need a referral to start?</h3></summary><p>A referral isn't always required, but we do need records showing your diagnosis and past treatments. If you have a psychiatrist or therapist, we'll coordinate with them so ketamine supports, rather than replaces, your ongoing care.</p></details>
+          <details class="faq-item"><summary><h3>Is ketamine addictive at infusion doses?</h3></summary><p>The risk is low in a supervised medical setting. Doses are much smaller than anesthetic or recreational amounts, given only in clinic, and spaced out over time. We screen for substance-use history before starting.</p></details>
+        </div>
+        <p class="centered faq-more"><a href="faq/">See all ketamine therapy FAQs</a></p>
+      </div>
+    </section>
+
+    <!-- ============ 15. MEDICAL REVIEW / E-E-A-T + SOURCES ============ -->
+    <section class="eeat section" id="medical-review" aria-labelledby="review-title">
+      <div class="container eeat-inner">
+        <div class="eeat-box">
+          <h2 id="review-title">Medically reviewed by Dr. [Full Name], MD</h2>
+          <p>Dr. [Full Name] is the medical director of Balanced Ketamine and is board-certified in [Specialty], with [XX] years of clinical experience and more than [X,XXX] ketamine infusions supervised. [Medical school], [Residency]. Member of [Professional association, e.g. ASKP3].</p>
+          <p class="updated">Last reviewed: <time datetime="2026-11-20">November 20, 2026</time>. This page is for general education and doesn't replace personal medical advice. If you're in crisis, call or text <a href="tel:988">988</a> (Suicide &amp; Crisis Lifeline) or dial 911.</p>
+        </div>
+        <div class="sources">
+          <h3>Sources</h3>
+          <ol>
+            <li>Berman RM, et al. Antidepressant effects of ketamine in depressed patients. <cite>Biological Psychiatry</cite>, 2000.</li>
+            <li>Zarate CA Jr, et al. A randomized trial of an NMDA antagonist in treatment-resistant major depression. <cite>Archives of General Psychiatry</cite>, 2006.</li>
+            <li>Sanacora G, et al. A consensus statement on the use of ketamine in the treatment of mood disorders. <cite>JAMA Psychiatry</cite>, 2017.</li>
+            <li>U.S. Food and Drug Administration. FDA approves new nasal spray medication for treatment-resistant depression. March 2019.</li>
+            <li>World Health Organization. Model List of Essential Medicines (ketamine, anesthetics section).</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       EXISTING FOOTER (from index-v3.html — design and markup unchanged).
+       Only the reference clinic's contact details were swapped. TODO(NAP)
+       =================================================================== -->
+  <footer class="site-footer" id="footer"><div class="container footer-main"><div class="footer-contact-copy"><p class="eyebrow">Get in Touch</p><h2>Balanced Ketamine</h2><p>Questions about the clinic or its services? Contact the team. This page is for general educational purposes and is not medical advice.</p></div><div class="footer-detail"><span aria-hidden="true">⌖</span><p>[Street Address, Suite]<br>Kansas City, MO [ZIP], United States</p></div><div class="footer-detail"><span aria-hidden="true">◷</span><p>Monday–Friday<br>[Opening Hours]</p></div><div class="footer-detail"><span aria-hidden="true">▣</span><p><a href="tel:+18165550123" data-track="click_to_call">(816) 555-0123</a><br><a href="#appointment">Request an appointment</a></p></div></div><div class="footer-bottom"><div class="container footer-bottom-inner"><nav aria-label="Footer navigation"><a href="#about">About Us</a><a href="#treatments">Treatments</a><a href="#expect">What to Expect</a><a href="#faq">FAQs</a><a href="#appointment">Contact</a></nav><span>© <span id="year">2026</span> Balanced Ketamine · <a href="#footer">Privacy Policy</a></span></div></div></footer>
+
+  <!-- ============ STICKY MOBILE CONTACT BAR (≤768px) ============ -->
+  <!-- TODO(NAP): replace the WhatsApp number (digits only, with country code) -->
+  <nav class="sticky-cta" aria-label="Quick contact">
+    <a href="tel:+18165550123" data-track="click_to_call"><span aria-hidden="true">✆</span> Call</a>
+    <a href="https://wa.me/18165550123" target="_blank" rel="noopener" data-track="whatsapp_click"><span aria-hidden="true">✉</span> WhatsApp</a>
+    <a href="#appointment" data-track="book_appointment_click"><span aria-hidden="true">▣</span> Book</a>
+  </nav>
+</body>
+</html>

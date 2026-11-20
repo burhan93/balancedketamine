@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Balanced Ketamine XML sitemap.
+  The home page is intentionally EXCLUDED per project brief.
+  Inner pages below are the planned URL slugs already linked from the home page.
+  Uncomment each <url> only once that page is live, so the sitemap never lists 404s.
+  TODO(DOMAIN): replace https://www.balancedketamine.com with the live domain.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!--
+  <url><loc>https://www.balancedketamine.com/ketamine-infusion-therapy/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/ketamine-for-depression/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/ketamine-for-anxiety/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/ketamine-for-ptsd/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/ketamine-for-bipolar-depression/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/ketamine-for-migraine/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/ketamine-for-chronic-pain/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/ketamine-for-crps-nerve-pain/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/what-to-expect/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/patient-referral/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/testimonials/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://www.balancedketamine.com/faq/</loc><lastmod>2026-11-20</lastmod></url>
+  -->
+</urlset>

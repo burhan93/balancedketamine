@@ -1,0 +1,12 @@
+# robots.txt — Balanced Ketamine
+# Per project brief, the home page is disallowed from crawling.
+# "/$" matches ONLY the root URL (not the whole site); "/index-v4.html" blocks the file itself.
+# WARNING: "Disallow: /" (without $) would block the ENTIRE site — do not use it.
+User-agent: *
+Disallow: /$
+Disallow: /index-v4.html
+Disallow: /thank-you/
+Allow: /
+
+# TODO(DOMAIN): replace with the live domain
+Sitemap: https://www.balancedketamine.com/sitemap.xml
